@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'normalize-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'bourbon'
+gem 'flutie'
 
 group :development, :test do
   gem 'byebug'

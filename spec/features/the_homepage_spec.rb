@@ -6,8 +6,13 @@ feature "The homepage", :type => :feature do
     expect(page).to have_selector 'html'
   end
   
-  it "has a title" do
+  it "has the correct title" do
     visit '/'
-    expect(page).to have_title 'chrch.us'
+    expect(page).to have_title 'chrch.us | a place for everyone'
+  end
+  
+  it "has the correct body class" do
+    visit '/'
+    expect(page).to have_css 'body.public-pages-home'
   end
 end

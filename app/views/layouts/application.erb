@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>chrch.us</title>
+    <title><%= page_title(app_name: 'chrch.us', separator: ' | ') %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <body class="<%= body_class %>">
     <% if(content_for?(:application_header)) %>
       <header id="application-header">
         <%= yield(:application_header) %>
