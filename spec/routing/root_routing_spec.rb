@@ -6,6 +6,6 @@ RSpec.describe "The root route", type: :routing do
   end
   
   it "routes to pages#home" do
-    expect(get: "/").to route_to "pages#home"
+    expect(get: "/").to route_to "public/pages#home"
   end
 end

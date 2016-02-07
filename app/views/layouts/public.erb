@@ -1,0 +1,19 @@
+<!-- Application header content -->
+<% content_for(:application_header) do %>
+  <nav id="public-navbar">
+    <h1 class="title">chrch.us</h1>
+    <ul class="nav-links">
+      <li>link 1</li>
+      <li>link 2</li>
+      <li>link 3</li>
+    </ul>
+  </nav>
+<% end %>
+
+<!-- Application footer content -->
+<% content_for(:application_footer) do %>
+
+<% end %>
+
+<!-- Render into application layout -->
+<%= render template: 'layouts/application' %>

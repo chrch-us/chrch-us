@@ -9,7 +9,18 @@
   </head>
 
   <body>
-    <h1>chrch.us</h1>
-    <%= yield %>
+    <% if(content_for?(:application_header)) %>
+      <header id="application-header">
+        <%= yield(:application_header) %>
+      </header>
+    <% end %>
+    <main id="application-body">
+      <%= yield %>
+    </main>
+    <% if(content_for?(:application_footer)) %>
+      <footer id="application-footer">
+        <%= yield(:application_footer) %>
+      </footer>
+    <% end %>
   </body>
 </html>
