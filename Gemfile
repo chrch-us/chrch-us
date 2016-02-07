@@ -2,11 +2,18 @@ source 'https://rubygems.org'
 
 gem 'rails', github: "rails/rails"
 
+# DB
 gem 'pg', '~> 0.18'
+
+# Server
 gem 'puma'
-gem 'sass-rails', '~> 5.0'
+
+# JS
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
+
+# Styles
+gem 'sass-rails', '~> 5.0'
 
 group :development, :test do
   gem 'byebug'
