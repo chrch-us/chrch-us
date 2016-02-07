@@ -5,4 +5,9 @@ feature "The homepage", :type => :feature do
     visit '/'
     expect(page).to have_selector 'html'
   end
+  
+  it "has a title" do
+    visit '/'
+    expect(page).to have_title 'chrch.us'
+  end
 end
