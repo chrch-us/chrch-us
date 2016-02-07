@@ -13,7 +13,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 
 # Styles
+gem 'normalize-rails'
 gem 'sass-rails', '~> 5.0'
+gem 'bourbon'
 
 group :development, :test do
   gem 'byebug'
