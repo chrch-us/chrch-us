@@ -1,24 +1,13 @@
-## README
+# chrch.us
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The code that powers chrch.us
 
-Things you may want to cover:
+## specs
 
-* Ruby version
+* Ruby 2.3
+* Rails 5
+* PostgreSQL
 
-* System dependencies
+## deployment
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Heroku
