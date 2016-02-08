@@ -21,6 +21,10 @@ input {
   font-weight: 300;
 }
 
+a {
+  color: $link-color;
+}
+
 ul {
   list-style: none;
 }

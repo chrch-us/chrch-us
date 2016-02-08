@@ -4,4 +4,7 @@ class Public::PagesController < PublicController
   
   def about
   end
+  
+  def learn_more
+  end
 end

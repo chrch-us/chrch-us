@@ -1,3 +1,13 @@
-<%= form_for @join, html: {class: 'join'} do |f| %>
-  <%= f.text_field :name, class: "form-control" %>
+<%= form_for @join, url: join_path, html: {class: 'join'} do |f| %>
+  <div class="verify">
+    <h1>your email: <%= @join.email %></h1>
+    <h2>not you? <%= link_to 'get me out of here!', reset_join_path, method: :post %></h2>
+  </div>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "i'm ready" %>
+  </div>
 <% end %>

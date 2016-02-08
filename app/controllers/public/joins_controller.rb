@@ -2,7 +2,12 @@ class Public::JoinsController < PublicController
   before_action :check_email!
   
   def new
-    @join = Join.new(email: session[:join_email])
+    @join = Join.new(session[:join_email])
+  end
+  
+  def reset
+    session.delete(:join_email)
+    redirect_to root_path
   end
 
 private
