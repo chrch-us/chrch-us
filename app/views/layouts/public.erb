@@ -1,6 +1,11 @@
 <!-- Page title content -->
 <% content_for(:page_title, 'a place for everyone') unless content_for?(:page_title) %>
 
+<!-- Head tags -->
+<% content_for(:head_tags) do %>
+  <%= stylesheet_link_tag 'public', media: 'all' %>
+<% end %>
+
 <!-- Application header content -->
 <% content_for(:application_header) do %>
   <%= render 'public/navbar' %>

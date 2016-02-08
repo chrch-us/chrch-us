@@ -1,0 +1,4 @@
+<%= form_for :new_join, html: {class: 'join'} do |f| %>
+  <%= f.email_field :email, placeholder: "enter an email address", class: "form-control email" %>
+  <%= f.submit 'join' %>
+<% end %>

@@ -2,6 +2,17 @@
   @import 'application/header';
 }
 
-#application-footer {
+#application-body {
+  $padding: $default-spacing;
   
+  @include display(flex);
+  @include flex-direction(column);
+  
+  padding: $padding;
+  
+  @import 'application/body';
+}
+
+#application-footer {
+  @import 'application/footer';
 }

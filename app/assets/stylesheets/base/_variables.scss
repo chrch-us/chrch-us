@@ -10,4 +10,18 @@ $body-color: $white;
 
 
 // Spacing
+$default-spacing: 10px;
 $nav-link-spacing: 10px;
+
+// Borders
+$default-border-width: 1px;
+$default-border-style: solid;
+$default-border-color: $silver;
+$default-border: $default-border-width $default-border-style $default-border-color;
+
+// Focus
+$focus-outline-color: $silver;
+$focus-outline-style: inset;
+$focus-outline-width: 3px;
+$focus-outline-offset: 0;
+$focus-outline: $focus-outline-color $focus-outline-style $focus-outline-width;

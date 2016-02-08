@@ -1,0 +1,27 @@
+#welcome {
+  @include display(flex);
+  @include flex-direction(column);
+  
+  .title {
+    font-size: 96px;
+  }
+  
+  .subtitle {
+    font-size: 72px;
+  }
+  
+  .join {
+    $spacing: 24px;
+    
+    @include display(flex);
+    font-size: 48px;
+    
+    input {
+      padding: $spacing;
+    }
+    
+    .email {
+      @include flex(1);
+    }
+  }
+}

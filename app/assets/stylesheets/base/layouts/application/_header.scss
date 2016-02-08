@@ -1,7 +1,13 @@
 nav {
+  $padding: $default-spacing;
+  $border: $default-border;
+  $nav-link-spacing: 0 $default-spacing;
+  
   @include display(flex);
   @include justify-content(space-between);
   @include align-items(center);
+  border-bottom: $border;
+  padding: $padding;
   
   a {
     color: inherit;
@@ -12,7 +18,7 @@ nav {
     @include display(flex);
     
     li {
-      margin: 0 $nav-link-spacing;
+      margin: $nav-link-spacing;
     }
   }
 }
