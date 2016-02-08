@@ -12,8 +12,10 @@
   
   .join {
     $spacing: 24px;
+    $margin: $spacing 0;
     
     @include display(flex);
+    margin: $margin;
     font-size: 48px;
     
     input {

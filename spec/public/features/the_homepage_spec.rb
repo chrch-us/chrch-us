@@ -35,8 +35,25 @@ feature "The homepage", :type => :feature do
       end
     end
     
-    # describe "the join form" do
-    #   let(:join_form) { welcome_section.find('.join') }
-    # end
+    describe "the join form" do
+      let(:join_form) { welcome_section.find('form.join') }
+      
+      it "requires an email address", js: true do
+        within(join_form) do
+          click_on "join"
+        end
+        
+        expect(page).to have_current_path root_path
+      end
+      
+      it "redirects to the join page on submit" do
+        within(join_form) do
+          fill_in "email", with: "test@example.com"
+          click_on "join"
+        end
+        
+        expect(page).to have_current_path(new_join_path)
+      end
+    end
   end
 end
