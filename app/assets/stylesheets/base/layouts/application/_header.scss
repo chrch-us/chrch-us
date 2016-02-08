@@ -3,6 +3,11 @@ nav {
   @include justify-content(space-between);
   @include align-items(center);
   
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
   .nav-links {
     @include display(flex);
     

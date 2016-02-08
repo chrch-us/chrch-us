@@ -15,4 +15,9 @@ feature "The homepage", :type => :feature do
     visit '/'
     expect(page).to have_css 'body.public-pages-home'
   end
+  
+  it "renders the navbar" do
+    visit '/'
+    expect(page).to have_css '#application-header nav'
+  end
 end

@@ -5,7 +5,7 @@ RSpec.describe "The root route", type: :routing do
     expect(get: "/").to be_routable
   end
   
-  it "routes to pages#home" do
+  it "routes to the pages controller" do
     expect(get: "/").to route_to "public/pages#home"
   end
 end
