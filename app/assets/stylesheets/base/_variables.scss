@@ -1,0 +1,13 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,600,700);
+$base-font: 'Raleway', sans-serif;
+
+// Colors
+@import 'clrs';
+$transparent: transparent;
+$body-background: $black;
+$body-color: $white;
+
+
+// Spacing
+$nav-link-spacing: 10px;

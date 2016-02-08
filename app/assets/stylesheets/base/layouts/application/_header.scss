@@ -1,0 +1,13 @@
+nav {
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(center);
+  
+  .nav-links {
+    @include display(flex);
+    
+    li {
+      margin: 0 $nav-link-spacing;
+    }
+  }
+}

@@ -17,6 +17,7 @@ gem 'normalize-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'bourbon'
 gem 'flutie'
+gem 'clrs'
 
 group :development, :test do
   gem 'byebug'
