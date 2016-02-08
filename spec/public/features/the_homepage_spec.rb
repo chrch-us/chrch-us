@@ -31,12 +31,12 @@ feature "The homepage", :type => :feature do
     
     it "has a join form" do
       within(welcome_section) do
-        expect(page).to have_css 'form.join'
+        expect(page).to have_css 'form.new-join'
       end
     end
     
     describe "the join form" do
-      let(:join_form) { welcome_section.find('form.join') }
+      let(:join_form) { welcome_section.find('form.new-join') }
       
       it "requires an email address", js: true do
         within(join_form) do

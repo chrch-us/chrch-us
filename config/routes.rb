@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   scope module: :public do
     # Public resources
-    resources :joins, only: [:new]
+    resources :joins, only: [:new, :create]
     resources :new_joins, only: [:create]
     
     # Static pages
